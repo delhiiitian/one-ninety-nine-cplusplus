@@ -1,0 +1,13 @@
+# Build outputs
+*.o
+*.a
+build/
+actual_output.txt
+projects/*/bill_splitter
+projects/*/guessing_game
+projects/*/report_card
+projects/*/inventory
+projects/*/atm
+projects/*/expense_tracker
+projects/*/parking_garage
+projects/*/log_analyzer
