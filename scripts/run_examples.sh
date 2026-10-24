@@ -22,6 +22,21 @@ for src in $dirs/*.cpp; do
     echo "FAIL (run) $src"; cat "$OUT/$name.out"; fail=$((fail+1))
   fi
 done
+# Multi-file lessons live in their own folder: compile every .cpp in it together.
+for lesson in $dirs/*/; do
+  [ -d "$lesson" ] || continue
+  name="$(basename "$lesson")"
+  bin="$OUT/$name"
+  sources=$(find "$lesson" -name '*.cpp' | sort)
+  if ! $CXX $FLAGS -I"$lesson" $sources -o "$bin" 2>"$OUT/err"; then
+    echo "FAIL (compile) $lesson"; cat "$OUT/err"; fail=$((fail+1)); continue
+  fi
+  if (cd "$OUT" && timeout 20 "$bin" < /dev/null > "$OUT/$name.out" 2>&1); then
+    pass=$((pass+1))
+  else
+    echo "FAIL (run) $lesson"; cat "$OUT/$name.out"; fail=$((fail+1))
+  fi
+done
 echo "Examples passed: $pass, failed: $fail"
 rm -rf "$OUT"
 [ "$fail" -eq 0 ]

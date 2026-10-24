@@ -1,0 +1,6 @@
+Plot: Farm-Plot-17 (5 corners)
+  Area:        1200.00 sq m = 12916.68 sq ft = 11.86 guntha
+  Boundary:    134.72 m
+  Fence cost:  24249.84
+  Fits inside: 40.00 m x 35.00 m
+  Uses 85.71% of that rectangle
