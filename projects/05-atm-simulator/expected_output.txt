@@ -1,0 +1,54 @@
+=== 199 Bank ATM ===
+
+Insert card (card number): PIN: Wrong PIN (2 tries left).
+PIN: 
+Welcome, Anil Kumar.
+
+1) Balance 2) Withdraw 3) Deposit 4) Transfer 5) Mini statement 6) Exit
+Choose: 
+Balance: 25000
+
+1) Balance 2) Withdraw 3) Deposit 4) Transfer 5) Mini statement 6) Exit
+Choose: Amount: 
+Error: amount must be a multiple of 100.
+
+1) Balance 2) Withdraw 3) Deposit 4) Transfer 5) Mini statement 6) Exit
+Choose: Amount: 
+Declined: insufficient funds, balance is only 25000.
+
+1) Balance 2) Withdraw 3) Deposit 4) Transfer 5) Mini statement 6) Exit
+Choose: Amount: 
+Please collect 180 notes of 100. Balance: 7000
+
+1) Balance 2) Withdraw 3) Deposit 4) Transfer 5) Mini statement 6) Exit
+Choose: Amount: 
+Declined: daily limit reached, you can withdraw 2000 more today.
+
+1) Balance 2) Withdraw 3) Deposit 4) Transfer 5) Mini statement 6) Exit
+Choose: To card: Amount: 
+Transferred. Balance: 5000
+
+1) Balance 2) Withdraw 3) Deposit 4) Transfer 5) Mini statement 6) Exit
+Choose: 
+Last transactions:
+  Withdraw  -18000
+  Transfer  -2000 to 4002
+
+1) Balance 2) Withdraw 3) Deposit 4) Transfer 5) Mini statement 6) Exit
+Choose: 
+  Please type digits only.
+
+1) Balance 2) Withdraw 3) Deposit 4) Transfer 5) Mini statement 6) Exit
+Choose: Please take your card. Goodbye, Anil Kumar.
+
+Insert card (card number): PIN: Wrong PIN (2 tries left).
+PIN: Wrong PIN (1 tries left).
+PIN: Wrong PIN (0 tries left).
+Too many wrong PINs. Card blocked.
+
+Insert card (card number): This card is blocked. Please contact your branch.
+
+Insert card (card number): Card not recognised.
+
+Insert card (card number): 
+ATM shutting down.
