@@ -1,0 +1,14 @@
+Restaurant name: Food bill amount: Tip percent (e.g. 10): Number of people: 
+================================
+  Spice Garden
+================================
+Food bill      :    1847.50
+Service tax 5% :      92.38
+Tip  12%       :     221.70
+--------------------------------
+Total          :    2161.57
+People         :          3
+Exact share    :     720.52
+Pay (rounded)  :        721
+Extra tip left :       1.43
+================================
