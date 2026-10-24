@@ -1,0 +1,11 @@
+ADD 2026-09-28 Rent 18000 September rent
+ADD 2026-10-01 Rent 18000 October rent
+ADD 2026-10-02 Food 420.50 Groceries, milk and bread
+ADD 2026-10-05 Transport 260 Metro card top-up
+ADD 2026-10-09 Food 1180 Dinner with friends
+ADD 2026-10-12 Fun 799 Concert ticket
+ADD 2026-10-15 Food 2300.75 Monthly groceries
+ADD 2026-10-18 Food abc Typo amount
+BUDGET Food 3000
+BUDGET Fun 1000
+QUIT
