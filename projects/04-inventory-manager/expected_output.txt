@@ -1,0 +1,51 @@
+Inventory ready. Type commands (QUIT to exit).
+> ADD R100 Basmati-Rice Grocery 40 120.00
+Added Basmati-Rice
+> ADD T200 Green-Tea Beverage 25 210.50
+Added Green-Tea
+> ADD S300 Bath-Soap Personal 60 35.00
+Added Bath-Soap
+> ADD C400 Instant-Coffee Beverage 12 340.00
+Added Instant-Coffee
+> ADD D500 Toor-Dal Grocery 30 145.00
+Added Toor-Dal
+> ADD R100 Basmati-Rice Grocery 10 120.00
+! R100 already exists, use RESTOCK
+> LIST
+  CODE    NAME            CATEGORY     QTY     PRICE
+  R100    Basmati-Rice    Grocery       40    120.00
+  S300    Bath-Soap       Personal      60     35.00
+  T200    Green-Tea       Beverage      25    210.50
+  C400    Instant-Coffee  Beverage      12    340.00
+  D500    Toor-Dal        Grocery       30    145.00
+  5 products, 167 units, stock value 20592.50
+> SELL R100 15
+Sold 15 x Basmati-Rice = 1800.00
+> SELL C400 9
+Sold 9 x Instant-Coffee = 3060.00
+> SELL T200 30
+! Only 25 Green-Tea left
+> SELL S300 22
+Sold 22 x Bath-Soap = 770.00
+> SELL X999 1
+! No item X999
+> RESTOCK T200 15
+Restocked Green-Tea to 40
+> FIND C400
+  C400    Instant-Coffee  Beverage       3    340.00
+> LOW 15
+Low stock (<= 15): 1 item(s)
+  C400    Instant-Coffee  Beverage       3    340.00
+> TOP 3
+Top 3 sellers:
+  1. Bath-Soap (22 sold)
+  2. Basmati-Rice (15 sold)
+  3. Instant-Coffee (9 sold)
+> REPORT
+Stock value by category:
+  Beverage      9440.00
+  Grocery       7350.00
+  Personal      1330.00
+Revenue so far: 5630.00
+> QUIT
+Goodbye.

@@ -1,0 +1,63 @@
+Expense tracker: 0 saved expense(s) loaded.
+> ADD 2026-09-28 Rent 18000 September rent
+Saved 18000.00 for Rent
+> ADD 2026-10-01 Rent 18000 October rent
+Saved 18000.00 for Rent
+> ADD 2026-10-02 Food 420.50 Groceries, milk and bread
+Saved 420.50 for Food
+> ADD 2026-10-05 Transport 260 Metro card top-up
+Saved 260.00 for Transport
+> ADD 2026-10-09 Food 1180 Dinner with friends
+Saved 1180.00 for Food
+> ADD 2026-10-12 Fun 799 Concert ticket
+Saved 799.00 for Fun
+> ADD 2026-10-15 Food 2300.75 Monthly groceries
+Saved 2300.75 for Food
+> ADD 2026-10-18 Food abc Typo amount
+! Usage: ADD yyyy-mm-dd category amount note
+> BUDGET Food 3000
+Budget for Food set to 3000.00
+> BUDGET Fun 1000
+Budget for Fun set to 1000.00
+> QUIT
+Expense tracker: 7 saved expense(s) loaded.
+> ADD 2026-10-20 Transport 540 Cab to airport
+Saved 540.00 for Transport
+> LIST 2026-10
+  2026-10-01  Rent        18000.00  October rent
+  2026-10-02  Food          420.50  Groceries; milk and bread
+  2026-10-05  Transport     260.00  Metro card top-up
+  2026-10-09  Food         1180.00  Dinner with friends
+  2026-10-12  Fun           799.00  Concert ticket
+  2026-10-15  Food         2300.75  Monthly groceries
+  2026-10-20  Transport     540.00  Cab to airport
+  7 expense(s), total 23500.25
+> SUMMARY 2026-10
+Summary for 2026-10 (total 23500.25)
+  Category       Spent  Share    Budget  Chart
+  Food         3901.25  16.6%   3000.00  ###  OVER by 901.25
+  Fun           799.00   3.4%   1000.00  
+  Rent        18000.00  76.6%         -  ###############
+  Transport     800.00   3.4%         -  
+> EXPORT 2026-10
+Report written to data/report-2026-10.txt (719 bytes)
+> BACKUP
+Backed up 2 files to data/backup
+> QUIT
+EXPENSE REPORT 2026-10
+
+  2026-10-01  Rent        18000.00  October rent
+  2026-10-02  Food          420.50  Groceries; milk and bread
+  2026-10-05  Transport     260.00  Metro card top-up
+  2026-10-09  Food         1180.00  Dinner with friends
+  2026-10-12  Fun           799.00  Concert ticket
+  2026-10-15  Food         2300.75  Monthly groceries
+  2026-10-20  Transport     540.00  Cab to airport
+  7 expense(s), total 23500.25
+
+Summary for 2026-10 (total 23500.25)
+  Category       Spent  Share    Budget  Chart
+  Food         3901.25  16.6%   3000.00  ###  OVER by 901.25
+  Fun           799.00   3.4%   1000.00  
+  Rent        18000.00  76.6%         -  ###############
+  Transport     800.00   3.4%         -  

@@ -1,0 +1,25 @@
+=== Guess the Number ===
+
+Difficulty: 1) Easy 1-50  2) Medium 1-100  3) Hard 1-500
+Choose: I picked a number from 1 to 100. You have 7 guesses.
+Guess 1:   Go lower (warm)
+Guess 2:   Go higher (cold)
+Guess 3:   Go higher (very hot)
+Guess 4: Correct! You found 43 in 4 guesses.
+New best score!
+Play again? (y/n): 
+Difficulty: 1) Easy 1-50  2) Medium 1-100  3) Hard 1-500
+Choose: I picked a number from 1 to 50. You have 8 guesses.
+Guess 1:   Out of range, this one is free.
+Guess 1:   Go lower (cold)
+Guess 2:   Go lower (very hot)
+Guess 3:   Go higher (warm)
+Guess 4:   Go higher (very hot)
+Guess 5:   Go higher (very hot)
+Guess 6:   Go lower (very hot)
+Guess 7:   Go higher (very hot)
+Guess 8:   Go higher (warm)
+Out of guesses. The number was 18.
+Play again? (y/n): 
+Games played: 2, won: 1, best: 4 guesses
+Thanks for playing!

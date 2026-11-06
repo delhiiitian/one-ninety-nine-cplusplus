@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Show compiler versions
+        run: g++ --version && cmake --version
+
+      - name: Compile and run every chapter example
+        run: bash scripts/run_examples.sh
+
+      - name: Test every project with make
+        run: |
+          for project in projects/*/; do
+            echo "== $project"
+            make -C "$project" test
+          done
+
+      - name: Build projects 7, 8 and 9 with CMake
+        run: |
+          for project in 07-geometry-library 08-parking-garage 09-log-analyzer; do
+            cmake -S "projects/$project" -B "cmake-build/$project"
+            cmake --build "cmake-build/$project"
+          done
+          ctest --test-dir cmake-build/07-geometry-library --output-on-failure

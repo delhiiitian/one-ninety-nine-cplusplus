@@ -11,3 +11,6 @@ projects/*/atm
 projects/*/expense_tracker
 projects/*/parking_garage
 projects/*/log_analyzer
+projects/06-expense-tracker/data/
+projects/07-geometry-library/build/
+cmake-build/
