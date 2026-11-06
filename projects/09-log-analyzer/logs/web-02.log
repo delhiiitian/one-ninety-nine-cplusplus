@@ -1,0 +1,82 @@
+2025-03-14 09:00:56 INFO [search] user logged in in 79ms
+2025-03-14 09:02:07 WARN [payments] retrying upstream in 3645ms
+2025-03-14 09:02:32 INFO [payments] order placed in 307ms
+2025-03-14 09:03:40 WARN [payments] retrying upstream in 2425ms
+2025-03-14 09:04:17 INFO [auth] order placed
+2025-03-14 09:04:49 INFO [auth] user logged in in 353ms
+2025-03-14 09:05:53 INFO [payments] request served in 277ms
+2025-03-14 09:06:52 ERROR [checkout] payment gateway timeout
+2025-03-14 09:07:13 INFO [checkout] user logged in in 155ms
+2025-03-14 09:07:34 INFO [auth] user logged in in 366ms
+2025-03-14 09:08:38 INFO [payments] request served in 147ms
+2025-03-14 09:09:09 DEBUG [checkout] query plan chosen
+2025-03-14 09:10:25 INFO [checkout] request served
+2025-03-14 09:11:39 ERROR [checkout] payment gateway timeout
+2025-03-14 09:12:18 INFO [auth] user logged in
+2025-03-14 09:13:02 WARN [search] low disk space in 2474ms
+2025-03-14 09:13:26 INFO [search] user logged in in 187ms
+2025-03-14 09:14:41 WARN [auth] low disk space
+2025-03-14 09:15:08 WARN [payments] retrying upstream in 2651ms
+2025-03-14 09:16:15 DEBUG [auth] cache hit
+2025-03-14 09:16:43 INFO [search] cache refreshed in 198ms
+2025-03-14 09:17:58 DEBUG [search] cache hit
+2025-03-14 09:19:18 INFO [checkout] order placed in 44ms
+2025-03-14 09:20:44 DEBUG [checkout] cache hit
+2025-03-14 09:22:00 INFO [auth] user logged in in 135ms
+2025-03-14 09:22:29 INFO [search] order placed
+2025-03-14 09:23:42 WARN [payments] retrying upstream in 3475ms
+2025-03-14 09:25:02 WARN [search] low disk space in 2698ms
+2025-03-14 09:25:29 INFO [auth] request served in 212ms
+2025-03-14 09:25:58 WARN [payments] low disk space
+2025-03-14 09:26:37 ERROR [auth] invalid token
+2025-03-14 09:27:49 INFO [checkout] request served
+2025-03-14 09:29:05 INFO [checkout] user logged in
+2025-03-14 9:61 ERROR payments broken
+2025-03-14 09:29:46 INFO [search] cache refreshed
+2025-03-14 09:30:53 INFO [payments] order placed in 202ms
+2025-03-14 09:31:53 INFO [checkout] user logged in
+2025-03-14 09:32:49 WARN [search] retrying upstream
+2025-03-14 09:33:59 WARN [checkout] retrying upstream in 2649ms
+2025-03-14 09:34:56 WARN [auth] low disk space in 1656ms
+2025-03-14 09:35:37 WARN [checkout] low disk space in 1183ms
+2025-03-14 09:36:33 DEBUG [search] cache hit
+2025-03-14 09:37:50 INFO [payments] request served in 89ms
+2025-03-14 09:38:25 WARN [payments] retrying upstream in 1865ms
+2025-03-14 09:39:13 INFO [payments] cache refreshed in 139ms
+2025-03-14 09:40:25 ERROR [payments] database connection lost
+2025-03-14 09:41:16 INFO [checkout] user logged in in 117ms
+2025-03-14 09:41:59 WARN [auth] slow response in 1301ms
+2025-03-14 09:42:32 WARN [auth] retrying upstream in 2160ms
+2025-03-14 09:43:09 INFO [payments] user logged in in 360ms
+2025-03-14 09:43:39 DEBUG [checkout] query plan chosen
+2025-03-14 09:44:58 ERROR [payments] invalid token
+2025-03-14 09:46:15 INFO [checkout] cache refreshed in 338ms
+2025-03-14 09:47:18 INFO [checkout] user logged in
+2025-03-14 09:48:12 INFO [auth] request served in 329ms
+2025-03-14 09:48:51 WARN [checkout] low disk space in 3296ms
+2025-03-14 09:49:20 INFO [auth] order placed in 393ms
+2025-03-14 09:50:15 INFO [auth] request served in 183ms
+2025-03-14 09:50:48 INFO [payments] order placed in 173ms
+2025-03-14 09:51:08 INFO [checkout] user logged in in 40ms
+
+2025-03-14 09:51:57 WARN [payments] low disk space in 2246ms
+2025-03-14 09:52:52 INFO [search] request served
+2025-03-14 09:53:22 INFO [auth] request served
+2025-03-14 09:53:44 WARN [checkout] low disk space
+2025-03-14 09:54:28 INFO [search] request served in 147ms
+2025-03-14 09:55:53 INFO [checkout] request served in 59ms
+2025-03-14 09:57:11 WARN [payments] low disk space in 1923ms
+2025-03-14 09:58:16 DEBUG [search] query plan chosen
+2025-03-14 09:58:54 DEBUG [search] cache hit
+2025-03-14 09:59:32 WARN [checkout] retrying upstream
+2025-03-14 10:00:22 INFO [checkout] cache refreshed in 370ms
+2025-03-14 10:01:26 INFO [payments] order placed
+2025-03-14 10:02:44 INFO [search] cache refreshed in 154ms
+2025-03-14 10:03:29 INFO [search] cache refreshed in 333ms
+2025-03-14 10:04:15 INFO [payments] cache refreshed in 231ms
+2025-03-14 10:04:58 INFO [checkout] request served in 228ms
+2025-03-14 10:05:26 ERROR [payments] payment gateway timeout
+2025-03-14 10:06:50 INFO [auth] order placed
+2025-03-14 10:08:00 INFO [auth] user logged in in 141ms
+2025-03-14 10:08:28 WARN [checkout] retrying upstream
+2025-03-14 10:08:56 WARN [auth] retrying upstream in 3721ms

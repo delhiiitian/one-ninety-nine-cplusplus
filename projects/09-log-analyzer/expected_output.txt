@@ -1,0 +1,28 @@
+Analysed 244 lines from 3 file(s) on 4 thread(s)
+Parsed entries: 240, malformed: 3
+  ? web-01.log:18  *** log rotated ***
+  ? web-02.log:34  2025-03-14 9:61 ERROR payments broken
+  ? web-03.log:6  TRACE [auth] verbose noise
+
+Entries by level
+  DEBUG    29  ######
+  INFO    138  ############################
+  WARN     51  ###########
+  ERROR    22  #####
+
+Errors by service
+  auth        4
+  checkout    9
+  payments    9
+
+Errors by hour
+  09:00  15
+  10:00   7
+
+Average response time: 803.6 ms
+Slowest 5 requests
+   3721 ms  web-02.log:82  auth      retrying upstream
+   3645 ms  web-02.log:2   payments  retrying upstream
+   3475 ms  web-02.log:27  payments  retrying upstream
+   3467 ms  web-03.log:56  auth      slow response
+   3296 ms  web-02.log:56  checkout  low disk space

@@ -4,6 +4,7 @@
 set -u
 cd "$(dirname "$0")/.."
 CXX="${CXX:-g++}"
+CC="${CC:-gcc}"
 FLAGS="-std=c++17 -Wall -Wextra -pedantic -Werror -pthread"
 OUT="$(mktemp -d)"
 pass=0; fail=0
@@ -28,7 +29,14 @@ for lesson in $dirs/*/; do
   name="$(basename "$lesson")"
   bin="$OUT/$name"
   sources=$(find "$lesson" -name '*.cpp' | sort)
-  if ! $CXX $FLAGS -I"$lesson" $sources -o "$bin" 2>"$OUT/err"; then
+  # Plain C files (lesson 9.9) are compiled by the C compiler, then linked in.
+  objects=""; cfail=0
+  for csrc in $(find "$lesson" -name '*.c' | sort); do
+    obj="$OUT/$(basename "$csrc" .c).o"
+    if ! $CC -std=c11 -Wall -Wextra -pedantic -Werror -c "$csrc" -o "$obj" 2>"$OUT/err"; then cfail=1; break; fi
+    objects="$objects $obj"
+  done
+  if [ "$cfail" -ne 0 ] || ! $CXX $FLAGS -I"$lesson" $sources $objects -o "$bin" 2>"$OUT/err"; then
     echo "FAIL (compile) $lesson"; cat "$OUT/err"; fail=$((fail+1)); continue
   fi
   if (cd "$OUT" && timeout 20 "$bin" < /dev/null > "$OUT/$name.out" 2>&1); then
