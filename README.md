@@ -8,12 +8,12 @@ every chapter ends with a larger project.
 
 | Chapter | Folder | Project |
 | --- | --- | --- |
-| 1. Basics | [chapter-01-basics](chapter-01-basics) | [Bill Splitter](projects/01-bill-splitter) |
+| 1. Basics | [chapter-01-basics](chapter-01-basics) | [Restaurant Bill Splitter](projects/01-bill-splitter) |
 | 2. Control flow | [chapter-02-control-flow](chapter-02-control-flow) | [Number Guessing Game](projects/02-guessing-game) |
-| 3. Functions | [chapter-03-functions](chapter-03-functions) | [Report Card Generator](projects/03-report-card) |
-| 4. Data structures | [chapter-04-data-structures](chapter-04-data-structures) | [Inventory Manager](projects/04-inventory-manager) |
+| 3. Functions | [chapter-03-functions](chapter-03-functions) | [Student Report Card](projects/03-report-card) |
+| 4. Data structures | [chapter-04-data-structures](chapter-04-data-structures) | [Shop Inventory Manager](projects/04-inventory-manager) |
 | 5. Error handling | [chapter-05-error-handling](chapter-05-error-handling) | [ATM Simulator](projects/05-atm-simulator) |
-| 6. Files and I/O | [chapter-06-files-io](chapter-06-files-io) | [Expense Tracker](projects/06-expense-tracker) |
+| 6. Files and I/O | [chapter-06-files-io](chapter-06-files-io) | [Personal Expense Tracker](projects/06-expense-tracker) |
 | 7. Modules and tooling | [chapter-07-modules-tooling](chapter-07-modules-tooling) | [Geometry Library with Tests](projects/07-geometry-library) |
 | 8. C++ strengths | [chapter-08-cpp-strengths](chapter-08-cpp-strengths) | [Parking Garage Manager](projects/08-parking-garage) |
 | 9. Real-world C++ | [chapter-09-real-world](chapter-09-real-world) | [Parallel Log Analyzer](projects/09-log-analyzer) |
