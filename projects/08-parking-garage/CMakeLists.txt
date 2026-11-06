@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+project(ParkingGarage LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_executable(parking_garage src/main.cpp src/garage.cpp src/vehicle.cpp)
+target_compile_options(parking_garage PRIVATE -Wall -Wextra -pedantic)

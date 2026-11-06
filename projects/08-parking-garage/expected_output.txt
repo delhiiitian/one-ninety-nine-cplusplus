@@ -1,0 +1,58 @@
+Garage open: 2 small, 3 regular, 1 large spot.
+> ENTER CAR KA01AB1234 08:05
+  Car KA01AB1234 -> spot R01
+> ENTER BIKE KA05XY0001 08:10
+  Motorbike KA05XY0001 -> spot S01
+> ENTER TRUCK MH12TR9000 08:30
+  Truck MH12TR9000 -> spot L01
+> ENTER EV KA03EV7777 08:45
+  Electric car KA03EV7777 -> spot R02
+> ENTER BIKE KA05XY0002 09:00
+  Motorbike KA05XY0002 -> spot S02
+> ENTER BIKE KA05XY0003 09:05
+  Motorbike KA05XY0003 -> spot R03
+> ENTER TRUCK MH14TR1111 09:10
+  Sorry, no free spot for a Truck
+> ENTER CAR KA01AB1234 09:15
+  Error: KA01AB1234 is already parked
+> ENTER BUS KA01BUS001 09:20
+  Error: unknown vehicle type 'BUS'
+> ENTER CAR KA02CD5678 9.30
+  Error: time must look like 09:30
+> STATUS
+  S01 Motorbike    KA05XY0001 since 08:10
+  S02 Motorbike    KA05XY0002 since 09:00
+  R01 Car          KA01AB1234 since 08:05
+  R02 Electric car KA03EV7777 since 08:45
+  R03 Motorbike    KA05XY0003 since 09:05
+  L01 Truck        MH12TR9000 since 08:30
+  6/6 spots in use
+> EXIT KA05XY0001 08:20
+  Motorbike KA05XY0001 left S01 after 10 min. Fee: Rs 0.00
+> EXIT KA01AB1234 10:30
+  Car KA01AB1234 left R01 after 145 min. Fee: Rs 120.00
+> EXIT KA03EV7777 12:00
+  Electric car KA03EV7777 left R02 after 195 min. Fee: Rs 310.00
+> EXIT MH12TR9000 19:45
+  Truck MH12TR9000 left L01 after 675 min. Fee: Rs 800.00
+> EXIT KA99ZZ0000 20:00
+  No vehicle with plate KA99ZZ0000
+> ENTER TRUCK MH14TR1111 20:05
+  Truck MH14TR1111 -> spot L01
+> STATUS
+  S01 free (small)
+  S02 Motorbike    KA05XY0002 since 09:00
+  R01 free (regular)
+  R02 free (regular)
+  R03 Motorbike    KA05XY0003 since 09:05
+  L01 Truck        MH14TR1111 since 20:05
+  3/6 spots in use
+> REPORT
+  Vehicle        Visits       Revenue
+  Car                 1     Rs 120.00
+  Electric car        1     Rs 310.00
+  Motorbike           3       Rs 0.00
+  Truck               2     Rs 800.00
+  Total revenue: Rs 1230.00
+> QUIT
+Garage closed.
